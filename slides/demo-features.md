@@ -1,25 +1,9 @@
 <!-- _class: profile-grid -->
 
-# Steckbrief & Code-Demo
+# Personenprofil
 
-<div class="profile-row">
-  <div class="profile-card">
-    <span class="label">Name</span>
-    <span class="value">Max Mustermann</span>
-  </div>
-  <div class="profile-card">
-    <span class="label">Rolle</span>
-    <span class="value">Projektmitarbeiter</span>
-  </div>
-  <div class="profile-card">
-    <span class="label">Fokus</span>
-    <span class="value">Frontend & Daten</span>
-  </div>
-  <div class="profile-card">
-    <span class="label">Kontakt</span>
-    <span class="value">max@beispiel.de</span>
-  </div>
-</div>
+| ![Platzhalterbild](https://placehold.co/320x240/00844D/ffffff?text=Person) | **Name:** Max Mustermann<br>**Rolle:** Projektmitarbeiter<br>**Fokus:** Frontend & Daten<br>**Kontakt:** max@beispiel.de |
+| :--- | :--- |
 
 ---
 
@@ -50,7 +34,24 @@ public class Main {
 
 ---
 
-# Weitere Sprachen
+# Web-Sprachen
+
+```html
+<section class="profile">
+  <h1>Willkommen</h1>
+  <p>Einfaches, sauberes Markup.</p>
+</section>
+```
+
+```css
+.profile {
+  display: grid;
+  gap: 12px;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+```
 
 ```typescript
 type User = {
@@ -70,3 +71,5 @@ int main() {
   return 0;
 }
 ```
+
+---

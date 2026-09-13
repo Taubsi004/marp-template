@@ -17,7 +17,8 @@ section {
   background-color: #ffffff;
   padding: 55px 70px;
   font-size: 24px;
-  background-image: var(--hfu-logo);
+  display: block;
+  background-image: none;
   background-repeat: no-repeat;
   background-position: calc(100% - 60px) 35px;
   background-size: 100px auto;
@@ -65,8 +66,9 @@ table {
 }
 
 th {
-  background-color: var(--hfu-green);
-  color: #ffffff;
+  background-color: #f8fafc;
+  color: var(--hfu-dark);
+  border-bottom: 1px solid #dfe7f1;
   padding: 10px 14px;
 }
 
@@ -95,13 +97,10 @@ footer {
 
 /* Titelfolie: <!-- _class: title --> */
 section.title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  display: block;
   background-position: 70px 70px;
   background-size: 160px auto;
-  padding-top: 180px;
+  padding-top: 120px;
 }
 
 section.title h1 {
@@ -166,27 +165,27 @@ section.leadership li {
 
 /* Inverse Folie: <!-- _class: inverse --> */
 section.inverse {
-  background-color: var(--hfu-green);
+  background-color: #ffffff;
   background-image: none;
-  color: #ffffff;
+  color: var(--hfu-dark);
 }
 
 section.inverse h1,
 section.inverse h2,
 section.inverse h3 {
-  color: #ffffff;
-  border-bottom-color: #ffffff;
+  color: var(--hfu-green);
+  border-bottom-color: var(--hfu-green);
   width: 100%;
 }
 
 section.inverse strong {
-  color: #d1fae5;
+  color: var(--hfu-green);
 }
 
 section.inverse footer,
 section.inverse header {
-  color: rgba(255, 255, 255, 0.7);
-  border-top-color: rgba(255, 255, 255, 0.2);
+  color: var(--hfu-grey);
+  border-top-color: #e2e8f0;
 }
 
 /* Erweiterungen für Steckbriefe und Code-Demos */
@@ -194,6 +193,8 @@ section.profile-grid {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding: 40px 40px 30px 40px;
+  background-color: #ffffff;
 }
 
 .profile-grid h1,
@@ -201,36 +202,43 @@ section.profile-grid {
   margin-bottom: 18px;
 }
 
-.profile-row {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(220px, 1fr));
-  gap: 16px;
-  margin-top: 12px;
+section.profile-grid table {
+  width: 100%;
+  height: 100%;
+  border-collapse: separate;
+  border-spacing: 24px;
+  margin-top: 6px;
+  table-layout: fixed;
 }
 
-.profile-card {
+section.profile-grid td {
   background: #f8fafc;
   border: 1px solid #dfe7f1;
   border-left: 4px solid var(--hfu-green);
-  border-radius: 12px;
-  padding: 16px 18px;
-  box-shadow: 0 2px 8px rgba(35, 40, 44, 0.05);
+  border-radius: 0;
+  padding: 20px 24px;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 1.0em;
 }
 
-.profile-card .label {
-  display: block;
-  font-size: 0.72em;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--hfu-grey);
-  margin-bottom: 8px;
+section.profile-grid td:first-child {
+  width: 36%;
+  background: #ffffff;
+  border-left: 0;
+  border: 1px solid #dfe7f1;
+  padding: 0;
 }
 
-.profile-card .value {
+section.profile-grid img {
   display: block;
-  font-size: 1.1em;
-  font-weight: 700;
-  color: var(--hfu-dark);
+  width: 100%;
+  height: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 0;
+  border: 0;
+  background: #ffffff;
 }
 
 pre {
