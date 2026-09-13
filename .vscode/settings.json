@@ -1,0 +1,8 @@
+{
+  "markdown.marp.themes": [
+    "./themes/hfu.css"
+  ],
+  "workbench.editor.focusRecentEditorAfterClose": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500
+}

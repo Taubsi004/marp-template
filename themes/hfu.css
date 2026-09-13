@@ -1,0 +1,186 @@
+/* @theme hfu */
+
+@import 'default';
+
+:root {
+  --hfu-green: #00844D;
+  --hfu-grey: #707173;
+  --hfu-dark: #23282c;
+  --hfu-light: #f4f6f8;
+  --hfu-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 58'%3E%3Cpath d='m70 0-2 7.3c5.8 1.6 9.2 7.5 7.7 13.3-1.6 5.8-7.5 9.2-13.3 7.7l-2 7.3c9.8 2.6 20-3.2 22.6-13S79.9 2.7 70 0m-4.8 10.2c-4.2 0-7.6 3.4-7.6 7.6s3.4 7.6 7.6 7.6 7.6-3.4 7.6-7.6-3.4-7.6-7.6-7.6m28.3.1-7.3 1.9c.5 1.8.7 3.7.7 5.6 0 12-9.8 21.7-21.8 21.7-5.8 0-11.3-2.3-15.3-6.4l-5.4 5.4c11.4 11.5 30 11.5 41.4.1 7.4-7.4 10.4-18.2 7.6-28.4Zm-.1 23.8C84.4 49.7 64.5 55 48.9 46c-4.9-2.8-9-6.9-11.9-11.8L30.4 38c11.2 19.2 35.8 25.7 55 14.6 6.1-3.5 11.1-8.6 14.6-14.7z' fill='%2300844D'/%3E%3Cpath d='M0 5v24.3h3.1V18.2h8.5v11.1h3.1V4.9h-3.1v10.5H3.1V5zm19 0v24.3h3.1V18.2h8.5v-2.7h-8.5V7.7h9V5h-12Zm14.6 0v15.4c0 6.7 2.5 9.4 7.7 9.4s7.6-2.7 7.6-9.4V5h-3.1v15.6c0 5.3-1.6 6.7-4.5 6.7s-4.5-1.3-4.5-6.7V5h-3.1Z' fill='%23707173'/%3E%3C/svg%3E");
+}
+
+/* Basisfolie & Logo oben rechts */
+section {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: var(--hfu-dark);
+  background-color: #ffffff;
+  padding: 55px 70px;
+  font-size: 24px;
+  background-image: var(--hfu-logo);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 60px) 35px;
+  background-size: 100px auto;
+}
+
+/* Typografie */
+h1, h2, h3 {
+  color: var(--hfu-green);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.1em;
+  margin-top: 0;
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--hfu-green);
+  width: calc(100% - 120px); /* Platz fürs Logo rechts freihalten */
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+strong {
+  color: var(--hfu-green);
+}
+
+a {
+  color: var(--hfu-green);
+}
+
+blockquote {
+  border-left: 6px solid var(--hfu-green);
+  background: var(--hfu-light);
+  color: var(--hfu-dark);
+  padding: 12px 20px;
+  margin: 20px 0;
+}
+
+/* Tabellen */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+th {
+  background-color: var(--hfu-green);
+  color: #ffffff;
+  padding: 10px 14px;
+}
+
+td {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 8px 14px;
+}
+
+/* Header & Footer */
+header {
+  top: 35px;
+  left: 70px;
+  font-size: 13px;
+  color: var(--hfu-grey);
+}
+
+footer {
+  bottom: 25px;
+  left: 70px;
+  width: calc(100% - 140px);
+  font-size: 13px;
+  color: var(--hfu-grey);
+  border-top: 1px solid #e2e8f0;
+  padding-top: 8px;
+}
+
+/* Titelfolie: <!-- _class: title --> */
+section.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-position: 70px 70px;
+  background-size: 160px auto;
+  padding-top: 180px;
+}
+
+section.title h1 {
+  width: 100%;
+  font-size: 2.6em;
+  border-bottom: 4px solid var(--hfu-green);
+}
+
+/* Kompakte Inhaltsfolien mit verschachtelten Listen */
+section.compact {
+  font-size: 20px;
+}
+
+section.compact h1 {
+  margin-bottom: 14px;
+}
+
+section.compact h2 {
+  margin-top: 0.45em;
+  margin-bottom: 0.35em;
+}
+
+section.compact ul {
+  margin-top: 0.25em;
+  margin-bottom: 0.35em;
+}
+
+section.compact li {
+  margin-bottom: 0.2em;
+}
+
+section.compact ul ul {
+  margin-top: 0.1em;
+  margin-bottom: 0.15em;
+}
+
+section.leadership {
+  font-size: 18px;
+}
+
+section.leadership h1 {
+  margin-bottom: 8px;
+}
+
+section.leadership h2 {
+  margin-top: 0.25em;
+  margin-bottom: 0.2em;
+}
+
+section.leadership ul {
+  margin-top: 0.1em;
+  margin-bottom: 0.15em;
+}
+
+section.leadership li {
+  margin-bottom: 0.08em;
+}
+
+/* Inverse Folie: <!-- _class: inverse --> */
+section.inverse {
+  background-color: var(--hfu-green);
+  background-image: none;
+  color: #ffffff;
+}
+
+section.inverse h1,
+section.inverse h2,
+section.inverse h3 {
+  color: #ffffff;
+  border-bottom-color: #ffffff;
+  width: 100%;
+}
+
+section.inverse strong {
+  color: #d1fae5;
+}
+
+section.inverse footer,
+section.inverse header {
+  color: rgba(255, 255, 255, 0.7);
+  border-top-color: rgba(255, 255, 255, 0.2);
+}

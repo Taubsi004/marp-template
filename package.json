@@ -1,0 +1,15 @@
+{
+  "name": "marp-collab-template",
+  "version": "1.0.0",
+  "description": "Collaborative multi-file Marp presentation template",
+  "scripts": {
+    "bundle": "node bundle.js",
+    "watch": "node --watch-path=slides --watch-path=main.md bundle.js",
+    "build:html": "npm run bundle && marp dist/deck.md -o dist/index.html --allow-local-files",
+    "build:pdf": "npm run bundle && marp dist/deck.md -o dist/deck.pdf --allow-local-files",
+    "build:pptx": "npm run bundle && marp dist/deck.md -o dist/deck.pptx --allow-local-files"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^3.4.0"
+  }
+}

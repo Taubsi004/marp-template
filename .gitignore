@@ -1,0 +1,14 @@
+#build
+*.pdf
+
+person_b_persoenliche_notizen
+
+# Dependencies
+node_modules/
+
+# Build artifacts & compiled slides (keine Merge-Konflikte!)
+dist/
+
+# OS metadata
+.DS_Store
+Thumbs.db
