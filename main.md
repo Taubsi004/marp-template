@@ -3,9 +3,12 @@ marp: true
 theme: hfu
 size: 16:9
 paginate: true
-header: Praktikum & Berufseinstieg
-footer: Nachbereitungsblock
+header: Allgemeine Präsentation
+footer: Template
 ---
 
-!INCLUDE "slides/person_a_tobias_weigold.md"
-!INCLUDE "slides/person_b_tom_kipp.md"
+!INCLUDE "slides/00-introduction.md"
+!INCLUDE "slides/chapter-1.md"
+!INCLUDE "slides/chapter-2.md"
+!INCLUDE "slides/demo-features.md"
+!INCLUDE "slides/99-closing.md"
