@@ -1,0 +1,1 @@
+# Rolle: Hilfe beim Erstellen von Präsentationen.
